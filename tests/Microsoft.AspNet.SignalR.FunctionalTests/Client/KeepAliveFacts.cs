@@ -46,8 +46,7 @@ namespace Microsoft.AspNet.SignalR.Tests
             }
         }
 
-
-        [Theory]
+        [Theory(Skip="This test will be fixed once #2590 is fixed.")]
         [InlineData(HostType.Memory, TransportType.ServerSentEvents, MessageBusType.Default)]
         [InlineData(HostType.Memory, TransportType.ServerSentEvents, MessageBusType.Fake)]
         [InlineData(HostType.Memory, TransportType.ServerSentEvents, MessageBusType.FakeMultiStream)]
@@ -88,7 +87,7 @@ namespace Microsoft.AspNet.SignalR.Tests
             }
         }
 
-        [Theory]
+        [Theory(Skip = "This test will be fixed once #2590 is fixed.")]
         [InlineData(HostType.Memory, TransportType.ServerSentEvents, MessageBusType.Default)]
         [InlineData(HostType.Memory, TransportType.ServerSentEvents, MessageBusType.Fake)]
         [InlineData(HostType.Memory, TransportType.ServerSentEvents, MessageBusType.FakeMultiStream)]
